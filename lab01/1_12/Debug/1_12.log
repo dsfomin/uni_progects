@@ -1,0 +1,3 @@
+﻿  1_12.cpp
+c:\uni\progects\lab01\1_12\1_12.cpp(19): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  1_12.vcxproj -> C:\UNI\progects\lab01\Debug\1_12.exe
