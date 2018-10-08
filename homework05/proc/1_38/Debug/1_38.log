@@ -1,0 +1,3 @@
+﻿  1_38.cpp
+c:\uni\progects\homework05\proc\1_38\1_38.cpp(19): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  1_38.vcxproj -> C:\UNI\progects\homework05\proc\Debug\1_38.exe
