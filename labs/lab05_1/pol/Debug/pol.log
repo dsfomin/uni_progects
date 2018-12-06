@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\uni\progects\labs\lab05_1\pol\source.cpp(204): warning C4018: <: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\lab05_1\pol\source.cpp(220): warning C4715: error: значение возвращается не при всех путях выполнения
+  pol.vcxproj -> C:\UNI\progects\labs\lab05_1\Debug\pol.exe
