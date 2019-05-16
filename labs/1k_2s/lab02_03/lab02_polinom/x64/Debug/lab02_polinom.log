@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(50): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(53): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(61): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(97): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(102): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(114): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\uni\progects\labs\1k_2s\lab02\lab02_polinom\source.cpp(163): warning C4018: <: несоответствие типов со знаком и без знака
+LINK : fatal error LNK1561: точка входа должна быть определена

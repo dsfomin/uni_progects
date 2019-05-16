@@ -1,0 +1,14 @@
+﻿  Source.cpp
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(85): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(86): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(87): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(94): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(95): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(96): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\drawtree.h(97): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\source.cpp(33): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\infixtopostfix.h(15): warning C4715: Priority: значение возвращается не при всех путях выполнения
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\list.h(129): warning C4715: List<node *>::operator[]: значение возвращается не при всех путях выполнения
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\list.h(129): warning C4715: List<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::operator[]: значение возвращается не при всех путях выполнения
+c:\uni\progects\labs\1k_2s\lab04\final_lab04\list.h(129): warning C4715: List<char>::operator[]: значение возвращается не при всех путях выполнения
+  FINAL_LAB04.vcxproj -> C:\UNI\progects\labs\1k_2s\lab04\Debug\FINAL_LAB04.exe
