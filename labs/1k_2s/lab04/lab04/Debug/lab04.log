@@ -1,3 +1,0 @@
-﻿  Source.cpp
-c:\uni\progects\labs\1k_2s\lab04\lab04\source.cpp(74): warning C4244: return: преобразование "double" в "int", возможна потеря данных
-  lab04.vcxproj -> C:\UNI\progects\labs\1k_2s\lab04\Debug\lab04.exe

@@ -1,3 +1,0 @@
-﻿  Source.cpp
-c:\uni\progects\labs\1k_2s\lab02\perevod_v_sdnf\header.h(138): warning C4715: List<Polinom>::operator[]: значение возвращается не при всех путях выполнения
-  perevod_v_sdnf.vcxproj -> C:\UNI\progects\labs\1k_2s\lab02\x64\Debug\lab2.exe
