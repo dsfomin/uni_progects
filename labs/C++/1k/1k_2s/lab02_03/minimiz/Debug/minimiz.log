@@ -1,0 +1,8 @@
+﻿  Source.cpp
+c:\uni\progects\labs\1k_2s\lab02\minimiz\source.cpp(102): warning C4477: "fscanf_s": в строке форматирования "%c" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "int *"
+  c:\uni\progects\labs\1k_2s\lab02\minimiz\source.cpp(102): note: этот аргумент используется описателем преобразования
+c:\uni\progects\labs\1k_2s\lab02\minimiz\source.cpp(102): warning C4473: "fscanf_s": передано недостаточно аргументов для строки формата
+  c:\uni\progects\labs\1k_2s\lab02\minimiz\source.cpp(102): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  c:\uni\progects\labs\1k_2s\lab02\minimiz\source.cpp(102): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  c:\uni\progects\labs\1k_2s\lab02\minimiz\source.cpp(102): note: этот аргумент используется в качестве размера буфера
+  minimiz.vcxproj -> C:\UNI\progects\labs\1k_2s\lab02\Debug\minimiz.exe

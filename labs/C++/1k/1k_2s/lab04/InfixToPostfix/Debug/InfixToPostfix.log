@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\uni\progects\labs\1k_2s\lab04\infixtopostfix\source.cpp(16): warning C4715: Priority: значение возвращается не при всех путях выполнения
+c:\uni\progects\labs\1k_2s\lab04\infixtopostfix\header.h(128): warning C4715: List<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::operator[]: значение возвращается не при всех путях выполнения
+c:\uni\progects\labs\1k_2s\lab04\infixtopostfix\header.h(128): warning C4715: List<char>::operator[]: значение возвращается не при всех путях выполнения
+  InfixToPostfix.vcxproj -> C:\UNI\progects\labs\1k_2s\lab04\Debug\InfixToPostfix.exe
