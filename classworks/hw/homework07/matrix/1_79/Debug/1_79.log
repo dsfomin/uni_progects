@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\uni\progects\homework07\matrix\1_79\main.cpp(15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\uni\progects\homework07\matrix\1_79\main.cpp(44): warning C4101: StNmax: неиспользованная локальная переменная
+c:\uni\progects\homework07\matrix\1_79\main.cpp(44): warning C4101: StNmin: неиспользованная локальная переменная
+  1_79.vcxproj -> C:\UNI\progects\homework07\matrix\Debug\1_79.exe

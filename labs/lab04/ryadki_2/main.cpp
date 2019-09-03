@@ -18,8 +18,7 @@ bool CheckIfStringPalindrom(string s1)
 
 string MakePalindromFromString(string& s1)
 {
-	string add;
-	string add_add;
+	string add, add_add;
 	for (int i = s1.length() - 1; i >= 0; i--)
 		add.push_back(s1[i]);
 	while (add != "")

@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\uni\progects\homework07\matrix\1_41\main.cpp(13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\uni\progects\homework07\matrix\1_41\main.cpp(14): warning C4101: i: неиспользованная локальная переменная
+  1_41.vcxproj -> C:\UNI\progects\homework07\matrix\Debug\1_41.exe

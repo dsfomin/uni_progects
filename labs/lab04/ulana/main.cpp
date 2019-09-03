@@ -1,23 +1,21 @@
 #include <iostream>
 #include <iomanip>
-#include <time.h>
 
 using namespace std;
 
 int main()
 {
 	setlocale(0, "rus");
-	srand((unsigned)time(NULL));
-	int **matr, ROWS, COLS, count, i, j, rowBeg, rowEnd, colBeg, colEnd;
+	int ROWS, COLS, count, i, j, rowBeg, rowEnd, colBeg, colEnd;
 	// запрашиваем у пользователя размеры матрицы
 	cout << "Введите количество строк матрицы: ";
 	cin >> ROWS;
 	cout << "Введите количество столбцов матрицы: ";
 	cin >> COLS;
 	// выделяем память для динамической матрицы
-	matr = (int **)malloc(ROWS * sizeof(int *));
+	int **matr = new int*[ROWS];
 	for (i = 0; i < ROWS; i++)
-		matr[i] = (int *)malloc(COLS * sizeof(int));
+		matr[i] = new int[COLS];
 	cout << endl << "Для матрицы :  " << ROWS <<"  x  "<< COLS << endl << endl;
 	// Инициализируем матрицу случайными значениями в диапазоне 1 - 50
 	for (i = 0; i < ROWS; i++)
@@ -54,9 +52,10 @@ int main()
 	}
 	cout << endl;
 	// Освобождаем память
-	for (i = 0; i < ROWS; i++)
-		free(matr[i]);
-	free(matr);
+	for (int i = 0; i < ROWS; ++i) {
+		delete[] matr[i];
+	}
+	delete [] matr;
 	system("pause");
 	return 0;
 }

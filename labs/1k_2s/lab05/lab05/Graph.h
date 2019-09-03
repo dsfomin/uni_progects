@@ -39,7 +39,7 @@ public:
 
 	void AddEdge(int a, int b, int len); // добавление 
 	void DeleteEdge(int a, int b);
-	List<Edge> MinWayDekster() {};
+	List<Edge> MinWayDekster();
 	bool CheckPlanarity() {}; // проверка планарности
 	bool is_new(int _a);
 	List<List<int>> bfs(int _fp);

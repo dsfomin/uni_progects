@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\uni\progects\classworks\1k_2s\01\01\source.cpp(46): error C2065: сout: необъявленный идентификатор
+c:\uni\progects\classworks\1k_2s\01\01\source.cpp(48): error C3861: SortN: идентификатор не найден
+c:\uni\progects\classworks\1k_2s\01\01\source.cpp(50): error C3861: SortABC: идентификатор не найден
