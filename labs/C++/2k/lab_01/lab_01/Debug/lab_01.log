@@ -1,23 +1,2 @@
-﻿  Date.cpp
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(29): error C3646: findDay: неизвестный спецификатор переопределения
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(29): error C2059: синтаксическая ошибка: (
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(29): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(32): error C3646: EnumToString: неизвестный спецификатор переопределения
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(32): error C2059: синтаксическая ошибка: (
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(32): error C2238: непредвиденные лексемы перед ";"
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.cpp(71): error C2039: EnumToString: не является членом "Date"
-  c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(6): note:  см. объявление "Date"
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.cpp(71): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.cpp(71): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EnumToString"
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.cpp(72): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.cpp(72): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
-  main.cpp
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(29): error C3646: findDay: неизвестный спецификатор переопределения
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(29): error C2059: синтаксическая ошибка: (
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(29): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(32): error C3646: EnumToString: неизвестный спецификатор переопределения
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(32): error C2059: синтаксическая ошибка: (
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(32): error C2238: непредвиденные лексемы перед ";"
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\main.cpp(54): error C2039: findDay: не является членом "Date"
-  c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.h(6): note:  см. объявление "Date"
-  Создание кода...
+﻿  main.cpp
+  lab_01.vcxproj -> C:\UNI\Programming\Labs\C++\2k\lab_01\Debug\lab_01.exe

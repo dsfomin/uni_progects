@@ -19,7 +19,7 @@ public:
 	Time operator-(Time toMin);
 	Time operator<(Time toCompare);
 	Time operator>(Time toCompare);
-	Time operator=(Time toCompare);
+	Time operator==(Time toCompare); 
 	bool TimeIsCorrect(int h, int m, int s);
 private:
 	int hour;

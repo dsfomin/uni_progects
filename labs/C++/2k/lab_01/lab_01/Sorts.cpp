@@ -1,10 +1,13 @@
 #include "Sorts.h"
+#include "Date.h"
+#include <vector>
 
 // InsertionSort
 
-void insertionSort(int arr[], int n)
+void insertionSort(vector<Date>& arr, int n)
 {
-	int i, key, j;
+	int i, j;
+	Date key;
 	for (i = 1; i < n; i++)
 	{
 		key = arr[i];
@@ -24,17 +27,18 @@ void insertionSort(int arr[], int n)
 
 // QuickSort
 
-void swap(int* a, int* b)
+template <class T>
+void swap(T* a, T* b)
 {
-	int t = *a;
+	T t = *a;
 	*a = *b;
 	*b = t;
 }
 
-int partition(int arr[], int low, int high)
+int partition(vector<Date>& arr, int low, int high)
 {
-	int pivot = arr[high]; 
-	int i = (low - 1); 
+	Date pivot = arr[high];
+	int i = (low - 1);
 
 	for (int j = low; j <= high - 1; j++)
 	{
@@ -48,7 +52,7 @@ int partition(int arr[], int low, int high)
 	return (i + 1);
 }
 
-void quickSort(int arr[], int low, int high)
+void quickSort(vector<Date>& arr, int low, int high)
 {
 	if (low < high)
 	{
@@ -61,14 +65,14 @@ void quickSort(int arr[], int low, int high)
 
 // MergeSort
 
-void merge(int arr[], int l, int m, int r)
+void merge(vector<Date>& arr, int l, int m, int r)
 {
 	int i, j, k;
 	int n1 = m - l + 1;
 	int n2 = r - m;
 
-	int *L = new int[n1];
-	int *R = new int[n2];
+	Date *L = new Date[n1];
+	Date *R = new Date[n2];
 
 	for (i = 0; i < n1; i++)
 		L[i] = arr[l + i];
@@ -80,7 +84,7 @@ void merge(int arr[], int l, int m, int r)
 	k = l;
 	while (i < n1 && j < n2)
 	{
-		if (L[i] <= R[j])
+		if (L[i] < R[j] || L[i] == R[j])
 		{
 			arr[k] = L[i];
 			i++;
@@ -108,7 +112,7 @@ void merge(int arr[], int l, int m, int r)
 	}
 }
 
-void mergeSort(int arr[], int l, int r)
+void mergeSort(vector<Date>& arr, int l, int r)
 {
 	if (l < r)
 	{

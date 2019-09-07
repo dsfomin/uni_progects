@@ -1,3 +1,4 @@
+#pragma once
 #include "Lists.h"
 
 template<typename T>

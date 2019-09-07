@@ -1,12 +1,15 @@
 #pragma once
 #include "Time.h"
+#include <string>
 
-enum dayWeek { MONDAY = 1, TUESDAY, WEDNESDEY, THUSDAT, FRIDAY, SATURDAY, SUNDAY };
+using namespace std;
+
+enum dayWeek { MONDAY = 1, TUESDAY, WEDNESDAY, THUSDAY, FRIDAY, SATURDAY, SUNDAY };
 
 class Date {
 public:
 	Date() {};
-	Date (int year, int month, int day, Time time) { // Конструктор
+	Date (int year, int month, int day, Time time = Time(0,0,0)) { // Конструктор
 		if (DateIsCorrect(year, month, day) == 1) {
 			this->year = year;
 			this->month = month;
@@ -23,13 +26,13 @@ public:
 	Time GetTime() { return this->time;}
 	Date operator+(Date toAdd);
 	Date operator-(Date toMin);
-	Date operator<(Date toCompare);
-	Date operator>(Date toCompare);
-	Date operator=(Date toCompare);
-	string findDay() { return EnumToString(this->WeekDay); }
+	bool operator<(Date toCompare);
+	bool operator>(Date toCompare);
+	bool operator==(Date toCompare);
+	string enToString(dayWeek d);
+	string findDay() { return string(enToString(WeekDay)); }
 	dayWeek FindWeekDay(int year, int month, int day);
 	bool DateIsCorrect(int y, int m, int d);
-	string EnumToString(dayWeek d);
 private:
 	dayWeek WeekDay;
 	int year;

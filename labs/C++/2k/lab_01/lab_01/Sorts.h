@@ -1,16 +1,20 @@
 #pragma once
+#include "Date.h"
+#include <vector>
 
 // InsertionSort
 
-void insertionSort(int arr[], int n);
+void insertionSort(vector<class Date>& arr, int n);
 
 // QuickSort
 
-void swap(int* a, int* b);
-int partition(int arr[], int low, int high);
-void quickSort(int arr[], int low, int high);
+template <class T>
+void swap(T* a, T* b);
+
+int partition(vector<class Date>& arr, int low, int high);
+void quickSort(vector<class Date>& arr, int low, int high);
 
 // MergeSort
 
-void merge(int arr[], int l, int m, int r);
-void mergeSort(int arr[], int l, int r);
+void merge(vector<class Date>& arr, int l, int m, int r);
+void mergeSort(vector<class Date>& arr, int l, int r);

@@ -1,5 +1,5 @@
+#pragma once
 #include "Time.h"
-#include <sstream>
 
 using namespace std;
 
@@ -35,7 +35,7 @@ Time Time::operator>(Time toCompare)
 	return Time();
 }
 
-Time Time::operator=(Time toCompare)
+Time Time::operator==(Time toCompare)
 {
 	return Time();
 }
