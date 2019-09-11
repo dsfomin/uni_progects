@@ -1,3 +1,6 @@
+#ifndef DATE_H
+#define DATE_H
+
 #pragma once
 #include "Time.h"
 #include <string>
@@ -40,3 +43,5 @@ private:
 	int day;
 	Time time;
 };
+
+#endif // !

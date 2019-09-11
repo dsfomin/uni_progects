@@ -1,3 +1,6 @@
+#ifndef SORTS_H
+#define SORST_H
+
 #pragma once
 #include "Date.h"
 #include <vector>
@@ -18,3 +21,5 @@ void quickSort(vector<class Date>& arr, int low, int high);
 
 void merge(vector<class Date>& arr, int l, int m, int r);
 void mergeSort(vector<class Date>& arr, int l, int r);
+
+#endif

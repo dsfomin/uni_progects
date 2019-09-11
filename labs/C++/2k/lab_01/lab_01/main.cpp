@@ -4,10 +4,11 @@
 #include <exception>
 #include <vector>
 #include <iomanip>
-#include "Date.h"
-#include "Lists.h"
-#include "Sorts.h"
 #include "Time.h"
+#include "Date.h"
+#include "Sorts.h"
+#include "Lists.h"
+#include "MassList.h"
 
 using namespace std;
 
@@ -30,7 +31,8 @@ int main() {
 		Date date1(1999, 12, 31);
 		Date date2(2012, 1, 31);
 		Date date3(2008, 8, 28);
-		//LinkedList<Date> lk_list;
+		LinkedList<Date> lk_list;
+
 		//MassList<Date> ms_list;
 
 		vector<Date> listd;
@@ -52,15 +54,28 @@ int main() {
 			cout << d << endl;
 		}
 
-		////Sorts
+		cout << endl;
 
-		////quickSort(listd, 0, listd.size() - 1);
-		////mergeSort(listd, 0, listd.size() - 1);
-		////insertionSort(listd, listd.size() - 1);
+		
+		lk_list.push_back(date1);
+		lk_list.push_back(date2);
+		lk_list.push_back(date3);
+		lk_list.push_back(date4);
+		lk_list.pop_back();
 
-		//for (Date d : listd) {
-		//	cout << d << endl;
-		//}
+		for (int i = 0; i < lk_list.GetSize(); i++) {
+			cout << lk_list[i] << endl;
+		}
+
+		//Sorts
+
+		quickSort(listd, 0, listd.size() - 1);
+		mergeSort(listd, 0, listd.size() - 1);
+		insertionSort(listd, listd.size() - 1);
+
+		for (Date d : listd) {
+			cout << d << endl;
+		}
 
 	}
 	catch (exception& e) {
