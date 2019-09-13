@@ -87,8 +87,9 @@ bool Date::operator>(Date toCompare) {
 		return this->GetYear() > toCompare.GetYear();
 	else if (this->GetMonth() != toCompare.GetMonth())
 		return this->GetMonth() > toCompare.GetMonth();
-	else
-		return this->GetDay() > toCompare.GetDay();
+	/*else if (this->GetTime() != this->GetTime())
+		return (this->GetTime() > toCompare.GetTime());*/
+	return this->GetDay() > toCompare.GetDay();
 }
 
 bool Date::operator==(Date toCompare)

@@ -40,12 +40,12 @@ void LinkedList<T>::insert(T data, int index)
 
 		for (int i = 0; i < index - 1; i++)
 		{
-			previous = previous->GetNext();
+			previous = previous->next;
 		}
 
-		LinkedList *newNode = new LinkedList(data, previous->GetNext);
+		LinkedList *newNode = new LinkedList(data, previous->next);
 
-		previous->GetNext() = newNode;
+		previous->next = newNode;
 
 		size++;
 	}

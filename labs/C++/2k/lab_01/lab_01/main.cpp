@@ -21,6 +21,28 @@ ostream& operator<<(ostream & stream, Date& date) {
 	return stream;
 }
 
+void insertionSort(LinkedList<Date> l, int n)
+{
+	int i, j;
+	Date key;
+	for (i = 1; i < n; i++)
+	{
+		key = l[i];
+		j = i - 1;
+
+
+		while (j >= 0 && l[j] > key)
+		{
+			l.removeAt(j + 1);
+			l.insert(l[j], j + 1);
+			j = j - 1;
+		}
+		l.removeAt(j + 1);
+		l.insert(key, j + 1);
+	}
+}
+
+
 int main() {
 	try {
 
@@ -55,26 +77,36 @@ int main() {
 		}
 
 		cout << endl;
-
 		
 		lk_list.push_back(date1);
 		lk_list.push_back(date2);
 		lk_list.push_back(date3);
 		lk_list.push_back(date4);
 		lk_list.pop_back();
+		
 
 		for (int i = 0; i < lk_list.GetSize(); i++) {
 			cout << lk_list[i] << endl;
 		}
 
+		cout << endl;
+
 		//Sorts
 
-		quickSort(listd, 0, listd.size() - 1);
-		mergeSort(listd, 0, listd.size() - 1);
+		/*quickSort(listd, 0, listd.size() - 1);
+		mergeSort(listd, 0, listd.size() - 1);*/
 		insertionSort(listd, listd.size() - 1);
 
 		for (Date d : listd) {
 			cout << d << endl;
+		}
+
+		cout << endl;
+
+		insertionSort(lk_list, lk_list.GetSize());
+
+		for (int i = 0; i < lk_list.GetSize(); i++) {
+			cout << lk_list[i] << endl;
 		}
 
 	}
