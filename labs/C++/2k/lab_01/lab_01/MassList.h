@@ -4,16 +4,32 @@
 #pragma once
 
 template <typename T>
-class MassList {
+class MassList
+{
 public:
+	// Конструктор по умолчанию
 	MassList() {};
+
+	// Получить массив
 	T* GetMass() { return this->list; }
+
+	// Получить количество елементов
 	int GetSize() { return this->size; }
+
+	// Добавление в конец списка
 	void push_back(T data);
+
+	// Удаление вконце списка
 	void pop_back();
+
+	// Сортировка 1)
 	void insertionSort();
+
 private:
+	// Список ввиде массива
 	T *list = new T[MAX];
+
+	// Размер массива
 	int size = 0;
 };
 

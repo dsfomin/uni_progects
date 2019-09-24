@@ -21,28 +21,6 @@ ostream& operator<<(ostream & stream, Date& date) {
 	return stream;
 }
 
-void insertionSort(LinkedList<Date> l, int n)
-{
-	int i, j;
-	Date key;
-	for (i = 1; i < n; i++)
-	{
-		key = l[i];
-		j = i - 1;
-
-
-		while (j >= 0 && l[j] > key)
-		{
-			l.removeAt(j + 1);
-			l.insert(l[j], j + 1);
-			j = j - 1;
-		}
-		l.removeAt(j + 1);
-		l.insert(key, j + 1);
-	}
-}
-
-
 int main() {
 	try {
 
@@ -53,7 +31,7 @@ int main() {
 		Date date1(1999, 12, 31);
 		Date date2(2012, 1, 31);
 		Date date3(2008, 8, 28);
-		LinkedList<Date> lk_list;
+		List<Date> lk_list;
 
 		//MassList<Date> ms_list;
 
@@ -83,7 +61,6 @@ int main() {
 		lk_list.push_back(date3);
 		lk_list.push_back(date4);
 		lk_list.pop_back();
-		
 
 		for (int i = 0; i < lk_list.GetSize(); i++) {
 			cout << lk_list[i] << endl;
@@ -103,7 +80,13 @@ int main() {
 
 		cout << endl;
 
-		insertionSort(lk_list, lk_list.GetSize());
+		//linkedListInsertionSort(lk_list, lk_list.GetSize());
+		lk_list.insertionSort();
+		//linkedListQuickSort(lk_list, lk_list.GetSize());
+		//lk_list.quickSort();
+		//linkedListMergeSort(lk_list, 0, lk_list.GetSize());
+		
+		//lk_list.mergeSort();
 
 		for (int i = 0; i < lk_list.GetSize(); i++) {
 			cout << lk_list[i] << endl;

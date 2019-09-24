@@ -1,118 +1,221 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef LIST_H
+#define LIST_H
 
-#pragma once
+using namespace std;
 
-const int MAX = 100;
-
-template <typename T>
-class LinkedList {
+// Шаблонный класс односвязного списка
+template<typename T>
+class List
+{
 public:
-	LinkedList() {};
-	LinkedList(T data, LinkedList* next = nullptr) {
-			this->data = data;
-			this->next = next;
-	}
+	// Контейнер по умолчанию
+	List();
+
+	// Удаление первого элемента в списке
+	void pop_front();
+
+	// Добавление элемента в конец списка
 	void push_back(T data);
+
+	// Очистить список
+	void clear();
+
+	// Получить количество елементов в списке
+	int GetSize() { return Size; }
+
+	// Перегруженный оператор [] 
 	T& operator[](const int index);
+
+	// Добавление элемента в начало списка
+	void push_front(T data);
+
+	// Добавление элемента в список по указанному индексу
 	void insert(T data, int index);
+
+	// Удаление элемента в списке по указанному индексу
 	void removeAt(int index);
+
+	// Удаление последнего элемента в списке
 	void pop_back();
-	T GetData() { return this->data; }
-	LinkedList* GetNext() { return this->next; }
-	int GetSize() { return this->size; }
+
+	// Сортировка 1)
+	void insertionSort();
+
 private:
-	T data;
-	LinkedList* next;
-	LinkedList* head = nullptr;
-	int size = 0;
+
+	// Шаблонный класс Ноды
+	template<typename T>
+	class Node
+	{
+	public:
+		Node * pNext; // Указатель на следующий елемент списка
+		T data; // Значение, которое храниться в даной Ноде списка
+
+		// Конструктор 
+		Node(T data = T(), Node *pNext = nullptr)
+		{
+			this->data = data;
+			this->pNext = pNext;
+		}
+	};
+
+	int Size; // Размер списка
+	Node<T> *head; // Указатель на голову списка
 };
 
+
 template<typename T>
-void LinkedList<T>::insert(T data, int index)
+List<T>::List()
 {
-	if (index == 0) {
-		this->head = new LinkedList(data, head);
-		this->size++;
-	}
-	else {
-		LinkedList *previous = this->head;
-
-		for (int i = 0; i < index - 1; i++)
-		{
-			previous = previous->next;
-		}
-
-		LinkedList *newNode = new LinkedList(data, previous->next);
-
-		previous->next = newNode;
-
-		size++;
-	}
+	Size = 0;
+	head = nullptr;
 }
 
 template<typename T>
-void LinkedList<T>::removeAt(int index)
+void List<T>::pop_front()
 {
-	if (index == 0)
+	Node<T> *temp = head;
+
+	head = head->pNext;
+
+	delete temp;
+
+	Size--;
+
+}
+
+template<typename T>
+void List<T>::push_back(T data)
+{
+	if (head == nullptr)
 	{
-		removeAt(0);
+		head = new Node<T>(data);
 	}
 	else
 	{
-		LinkedList *previous = this->head;
-		for (int i = 0; i < index - 1; i++)
+		Node<T> *current = this->head;
+
+		while (current->pNext != nullptr)
 		{
-			previous = previous->next;
+			current = current->pNext;
 		}
+		current->pNext = new Node<T>(data);
 
-
-		LinkedList *toDelete = previous->GetNext();
-
-		previous->next = toDelete->next;
-
-		delete toDelete;
-
-		size--;
 	}
+	Size++;
 }
 
 template<typename T>
-void LinkedList<T>::pop_back()
+void List<T>::clear()
 {
-	removeAt(size - 1);
+	while (Size)
+	{
+		pop_front();
+	}
 }
 
-template <class T>
-T& LinkedList<T>::operator[](const int index) {
+
+template<typename T>
+T & List<T>::operator[](const int index)
+{
 	int counter = 0;
 
-	LinkedList *current = this->head;
+	Node<T> *current = this->head;
 
-	while (current != nullptr) {
-		if (counter == index) return current->data;
-		current = current->next;
+	while (current != nullptr)
+	{
+		if (counter == index)
+		{
+			return current->data;
+		}
+		current = current->pNext;
 		counter++;
 	}
 }
 
-template <class T>
-void LinkedList<T>::push_back(T data) {
-	if (head == nullptr)
+template<typename T>
+void List<T>::push_front(T data)
+{
+	head = new Node<T>(data, head);
+	Size++;
+}
+
+template<typename T>
+void List<T>::insert(T data, int index)
+{
+	if (index == 0)
 	{
-		head = new LinkedList(data);
+		push_front(data);
 	}
 	else
 	{
-		LinkedList *current = this->head;
+		Node<T> *previous = this->head;
 
-		while (current->next != nullptr)
+		for (int i = 0; i < index - 1; i++)
 		{
-			current = current->next;
+			previous = previous->pNext;
 		}
-		current->next = new LinkedList(data);
 
+		Node<T> *newNode = new Node<T>(data, previous->pNext);
+
+		previous->pNext = newNode;
+
+		Size++;
 	}
-	size++;
 }
+
+template<typename T>
+void List<T>::removeAt(int index)
+{
+	if (index == 0)
+	{
+		pop_front();
+	}
+	else
+	{
+		Node<T> *previous = this->head;
+		for (int i = 0; i < index - 1; i++)
+		{
+			previous = previous->pNext;
+		}
+
+
+		Node<T> *toDelete = previous->pNext;
+
+		previous->pNext = toDelete->pNext;
+
+		delete toDelete;
+
+		Size--;
+	}
+
+}
+
+template<typename T>
+void List<T>::pop_back()
+{
+	removeAt(Size - 1);
+}
+
+template<typename T>
+void List<T>::insertionSort()
+{
+	int i, j;
+	Date key;
+	for (i = 1; i < this->Size; i++)
+	{
+		key = this[0][i];
+		j = i - 1;
+
+		while (j >= 0 && this[0][j] > key)
+		{
+			this->removeAt(j + 1);
+			this->insert(this[0][j], j + 1);
+			j = j - 1;
+		}
+		this->removeAt(j + 1);
+		this->insert(key, j + 1);
+	}
+}
+
 #endif
