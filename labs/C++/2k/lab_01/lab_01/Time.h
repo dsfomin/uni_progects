@@ -2,6 +2,7 @@
 #define TIME_H
 
 #pragma once
+#include <iomanip>
 
 // Класс времени
 class Time {

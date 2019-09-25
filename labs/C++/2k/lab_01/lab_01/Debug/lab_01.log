@@ -1,8 +1,3 @@
-﻿  Date.cpp
-  Sorts.cpp
-  main.cpp
-  Создание кода...
+﻿  main.cpp
 c:\uni\programming\labs\c++\2k\lab_01\lab_01\lists.h(134): warning C4715: List<Date>::operator[]: значение возвращается не при всех путях выполнения
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\lists.h(134): warning C4715: List<Date>::operator[]: значение возвращается не при всех путях выполнения
-c:\uni\programming\labs\c++\2k\lab_01\lab_01\date.cpp(43): warning C4715: Date::FindWeekDay: значение возвращается не при всех путях выполнения
   lab_01.vcxproj -> C:\UNI\Programming\Labs\C++\2k\lab_01\Debug\lab_01.exe

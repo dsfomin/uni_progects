@@ -3,6 +3,8 @@
 
 #pragma once
 
+const int MAX = 256;
+
 template <typename T>
 class MassList
 {
@@ -15,6 +17,9 @@ public:
 
 	// Получить количество елементов
 	int GetSize() { return this->size; }
+
+	// Перегруженный оператор [] 
+	T& operator[](const int index);
 
 	// Добавление в конец списка
 	void push_back(T data);
@@ -36,14 +41,16 @@ private:
 template<typename T>
 void MassList<T>::push_back(T data)
 {
-	this->GetMass()[this->GetSize()] = T;
-	this->size++;
+	T key = data;
+	list[size] = key;
+	size++;
 }
 
 template<typename T>
 void MassList<T>::pop_back()
 {
-	this->size--;
+	list[size - 1] = T();
+	size--;
 }
 
 template <class T>
@@ -75,5 +82,10 @@ void MassList<T>::insertionSort()
 	}
 }
 
+template<typename T>
+T & MassList<T>::operator[](const int index)
+{
+	return list[index];
+}
 
 #endif

@@ -1,5 +1,7 @@
 #pragma once
 #include "Time.h"
+#include <iomanip>
+
 
 using namespace std;
 
@@ -48,4 +50,3 @@ bool Time::TimeIsCorrect(int h, int m, int s)
 
 	return true;
 }
-
