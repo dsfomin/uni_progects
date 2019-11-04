@@ -1,0 +1,15 @@
+﻿  Source.cpp
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(52): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(56): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(67): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(72): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(88): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(95): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(30): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+  c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(50): note: выполняется компиляция ссылки на экземпляр шаблон функции "int hash_<int>(T *,int)"
+          with
+          [
+              T=int
+          ]
+c:\uni\programming\algo\rabin-karp for 2d array\rabin-karp for 2d array\source.cpp(33): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+  Rabin-Karp for 2D array.vcxproj -> C:\UNI\Programming\Algo\Rabin-Karp for 2D array\Debug\Rabin-Karp for 2D array.exe

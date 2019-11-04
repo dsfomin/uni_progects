@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\uni\programming\algo\checkofcircularlineshiftbyzfunc\checkofcircularlineshiftbyzfunc\source.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\uni\programming\algo\checkofcircularlineshiftbyzfunc\checkofcircularlineshiftbyzfunc\source.cpp(91): note: выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<int,std::allocator<_Ty>> search_kmp<std::string>(const T &,const T &,const T &)"
+          with
+          [
+              _Ty=int,
+              T=std::string
+          ]
+  CheckOfCircularLineShiftByZFunc.vcxproj -> C:\UNI\Programming\Algo\CheckOfCircularLineShiftByZFunc\Debug\CheckOfCircularLineShiftByZFunc.exe

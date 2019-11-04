@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(37): warning C4244: инициализация: преобразование "int64_t" в "int", возможна потеря данных
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(38): warning C4244: инициализация: преобразование "int64_t" в "int", возможна потеря данных
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(58): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(62): warning C4244: аргумент: преобразование "int64_t" в "int", возможна потеря данных
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(74): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(80): warning C4244: инициализация: преобразование "int64_t" в "unsigned int", возможна потеря данных
+c:\uni\programming\algo\bolty_and_gaiki\bolty_and_gaiki\source.cpp(81): warning C4244: инициализация: преобразование "int64_t" в "unsigned int", возможна потеря данных
+  Bolty_and_Gaiki.vcxproj -> C:\UNI\Programming\Algo\Bolty_and_Gaiki\Debug\Bolty_and_Gaiki.exe
